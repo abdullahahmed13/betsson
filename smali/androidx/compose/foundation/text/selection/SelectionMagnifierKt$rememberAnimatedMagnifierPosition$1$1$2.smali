@@ -1,0 +1,223 @@
+.class final Landroidx/compose/foundation/text/selection/SelectionMagnifierKt$rememberAnimatedMagnifierPosition$1$1$2;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lkotlinx/coroutines/flow/i;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Landroidx/compose/foundation/text/selection/SelectionMagnifierKt$rememberAnimatedMagnifierPosition$1$1;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<T:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;",
+        "Lkotlinx/coroutines/flow/i;"
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\u000e\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\u0008\u0003\u0010\u0005\u001a\u00020\u00022\u0006\u0010\u0001\u001a\u00020\u0000H\u008a@\u00a2\u0006\u0004\u0008\u0003\u0010\u0004"
+    }
+    d2 = {
+        "Landroidx/compose/ui/geometry/Offset;",
+        "targetValue",
+        "",
+        "emit-3MmeM6k",
+        "(JLkotlin/coroutines/e;)Ljava/lang/Object;",
+        "<anonymous>"
+    }
+    k = 0x3
+    mv = {
+        0x1,
+        0x8,
+        0x0
+    }
+.end annotation
+
+
+# instance fields
+.field final synthetic $animatable:Landroidx/compose/animation/core/Animatable;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Landroidx/compose/animation/core/Animatable<",
+            "Landroidx/compose/ui/geometry/Offset;",
+            "Landroidx/compose/animation/core/AnimationVector2D;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field final synthetic $animationScope:Lkotlinx/coroutines/p0;
+
+
+# direct methods
+.method public constructor <init>(Landroidx/compose/animation/core/Animatable;Lkotlinx/coroutines/p0;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroidx/compose/animation/core/Animatable<",
+            "Landroidx/compose/ui/geometry/Offset;",
+            "Landroidx/compose/animation/core/AnimationVector2D;",
+            ">;",
+            "Lkotlinx/coroutines/p0;",
+            ")V"
+        }
+    .end annotation
+
+    iput-object p1, p0, Landroidx/compose/foundation/text/selection/SelectionMagnifierKt$rememberAnimatedMagnifierPosition$1$1$2;->$animatable:Landroidx/compose/animation/core/Animatable;
+
+    iput-object p2, p0, Landroidx/compose/foundation/text/selection/SelectionMagnifierKt$rememberAnimatedMagnifierPosition$1$1$2;->$animationScope:Lkotlinx/coroutines/p0;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public bridge synthetic emit(Ljava/lang/Object;Lkotlin/coroutines/e;)Ljava/lang/Object;
+    .locals 2
+
+    check-cast p1, Landroidx/compose/ui/geometry/Offset;
+
+    invoke-virtual {p1}, Landroidx/compose/ui/geometry/Offset;->unbox-impl()J
+
+    move-result-wide v0
+
+    invoke-virtual {p0, v0, v1, p2}, Landroidx/compose/foundation/text/selection/SelectionMagnifierKt$rememberAnimatedMagnifierPosition$1$1$2;->emit-3MmeM6k(JLkotlin/coroutines/e;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final emit-3MmeM6k(JLkotlin/coroutines/e;)Ljava/lang/Object;
+    .locals 7
+    .param p3    # Lkotlin/coroutines/e;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(J",
+            "Lkotlin/coroutines/e<",
+            "-",
+            "Lkotlin/Unit;",
+            ">;)",
+            "Ljava/lang/Object;"
+        }
+    .end annotation
+
+    iget-object v0, p0, Landroidx/compose/foundation/text/selection/SelectionMagnifierKt$rememberAnimatedMagnifierPosition$1$1$2;->$animatable:Landroidx/compose/animation/core/Animatable;
+
+    invoke-virtual {v0}, Landroidx/compose/animation/core/Animatable;->getValue()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Landroidx/compose/ui/geometry/Offset;
+
+    invoke-virtual {v0}, Landroidx/compose/ui/geometry/Offset;->unbox-impl()J
+
+    move-result-wide v0
+
+    invoke-static {v0, v1}, Landroidx/compose/ui/geometry/OffsetKt;->isSpecified-k-4lQ0M(J)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    invoke-static {p1, p2}, Landroidx/compose/ui/geometry/OffsetKt;->isSpecified-k-4lQ0M(J)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    iget-object v0, p0, Landroidx/compose/foundation/text/selection/SelectionMagnifierKt$rememberAnimatedMagnifierPosition$1$1$2;->$animatable:Landroidx/compose/animation/core/Animatable;
+
+    invoke-virtual {v0}, Landroidx/compose/animation/core/Animatable;->getValue()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Landroidx/compose/ui/geometry/Offset;
+
+    invoke-virtual {v0}, Landroidx/compose/ui/geometry/Offset;->unbox-impl()J
+
+    move-result-wide v0
+
+    invoke-static {v0, v1}, Landroidx/compose/ui/geometry/Offset;->getY-impl(J)F
+
+    move-result v0
+
+    invoke-static {p1, p2}, Landroidx/compose/ui/geometry/Offset;->getY-impl(J)F
+
+    move-result v1
+
+    cmpg-float v0, v0, v1
+
+    if-nez v0, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    iget-object v1, p0, Landroidx/compose/foundation/text/selection/SelectionMagnifierKt$rememberAnimatedMagnifierPosition$1$1$2;->$animationScope:Lkotlinx/coroutines/p0;
+
+    new-instance v4, Landroidx/compose/foundation/text/selection/SelectionMagnifierKt$rememberAnimatedMagnifierPosition$1$1$2$1;
+
+    iget-object p3, p0, Landroidx/compose/foundation/text/selection/SelectionMagnifierKt$rememberAnimatedMagnifierPosition$1$1$2;->$animatable:Landroidx/compose/animation/core/Animatable;
+
+    const/4 v0, 0x0
+
+    invoke-direct {v4, p3, p1, p2, v0}, Landroidx/compose/foundation/text/selection/SelectionMagnifierKt$rememberAnimatedMagnifierPosition$1$1$2$1;-><init>(Landroidx/compose/animation/core/Animatable;JLkotlin/coroutines/e;)V
+
+    const/4 v5, 0x3
+
+    const/4 v6, 0x0
+
+    const/4 v2, 0x0
+
+    const/4 v3, 0x0
+
+    invoke-static/range {v1 .. v6}, Lkotlinx/coroutines/i;->d(Lkotlinx/coroutines/p0;Lkotlin/coroutines/CoroutineContext;Lkotlinx/coroutines/r0;Lkotlin/jvm/functions/Function2;ILjava/lang/Object;)Lkotlinx/coroutines/c2;
+
+    sget-object p1, Lkotlin/Unit;->a:Lkotlin/Unit;
+
+    return-object p1
+
+    :cond_1
+    :goto_0
+    iget-object v0, p0, Landroidx/compose/foundation/text/selection/SelectionMagnifierKt$rememberAnimatedMagnifierPosition$1$1$2;->$animatable:Landroidx/compose/animation/core/Animatable;
+
+    invoke-static {p1, p2}, Landroidx/compose/ui/geometry/Offset;->box-impl(J)Landroidx/compose/ui/geometry/Offset;
+
+    move-result-object p1
+
+    invoke-virtual {v0, p1, p3}, Landroidx/compose/animation/core/Animatable;->snapTo(Ljava/lang/Object;Lkotlin/coroutines/e;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    invoke-static {}, Lkotlin/coroutines/intrinsics/c;->g()Ljava/lang/Object;
+
+    move-result-object p2
+
+    if-ne p1, p2, :cond_2
+
+    return-object p1
+
+    :cond_2
+    sget-object p1, Lkotlin/Unit;->a:Lkotlin/Unit;
+
+    return-object p1
+.end method
