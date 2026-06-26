@@ -1,0 +1,35 @@
+.class public final Lobg/android/shared/ui/di/d;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Ldagger/internal/e;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Ldagger/internal/e;"
+    }
+.end annotation
+
+
+# direct methods
+.method public static a(Lobg/android/platform/network/rest/model/NetworkConfig;Lokhttp3/a0$a;Ljava/lang/String;)Lokhttp3/a0;
+    .locals 1
+
+    sget-object v0, Lobg/android/shared/ui/di/c;->a:Lobg/android/shared/ui/di/c$a;
+
+    invoke-virtual {v0, p0, p1, p2}, Lobg/android/shared/ui/di/c$a;->c(Lobg/android/platform/network/rest/model/NetworkConfig;Lokhttp3/a0$a;Ljava/lang/String;)Lokhttp3/a0;
+
+    move-result-object p0
+
+    invoke-static {p0}, Ldagger/internal/d;->c(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Lokhttp3/a0;
+
+    return-object p0
+.end method

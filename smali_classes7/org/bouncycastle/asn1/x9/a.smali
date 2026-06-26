@@ -1,0 +1,111 @@
+.class public Lorg/bouncycastle/asn1/x9/a;
+.super Lorg/bouncycastle/asn1/m;
+
+
+# instance fields
+.field public c:Lorg/bouncycastle/asn1/k;
+
+
+# direct methods
+.method public constructor <init>(Lorg/bouncycastle/asn1/k;)V
+    .locals 1
+
+    invoke-direct {p0}, Lorg/bouncycastle/asn1/m;-><init>()V
+
+    if-eqz p1, :cond_0
+
+    iput-object p1, p0, Lorg/bouncycastle/asn1/x9/a;->c:Lorg/bouncycastle/asn1/k;
+
+    return-void
+
+    :cond_0
+    new-instance p1, Ljava/lang/IllegalArgumentException;
+
+    const-string v0, "\'y\' cannot be null"
+
+    invoke-direct {p1, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    throw p1
+.end method
+
+.method public static h(Ljava/lang/Object;)Lorg/bouncycastle/asn1/x9/a;
+    .locals 3
+
+    if-eqz p0, :cond_2
+
+    instance-of v0, p0, Lorg/bouncycastle/asn1/x9/a;
+
+    if-eqz v0, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    instance-of v0, p0, Lorg/bouncycastle/asn1/k;
+
+    if-eqz v0, :cond_1
+
+    new-instance v0, Lorg/bouncycastle/asn1/x9/a;
+
+    check-cast p0, Lorg/bouncycastle/asn1/k;
+
+    invoke-direct {v0, p0}, Lorg/bouncycastle/asn1/x9/a;-><init>(Lorg/bouncycastle/asn1/k;)V
+
+    return-object v0
+
+    :cond_1
+    new-instance v0, Ljava/lang/IllegalArgumentException;
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "Invalid DHPublicKey: "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Ljava/lang/Class;->getName()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-direct {v0, p0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+
+    :cond_2
+    :goto_0
+    check-cast p0, Lorg/bouncycastle/asn1/x9/a;
+
+    return-object p0
+.end method
+
+
+# virtual methods
+.method public c()Lorg/bouncycastle/asn1/r;
+    .locals 1
+
+    iget-object v0, p0, Lorg/bouncycastle/asn1/x9/a;->c:Lorg/bouncycastle/asn1/k;
+
+    return-object v0
+.end method
+
+.method public i()Ljava/math/BigInteger;
+    .locals 1
+
+    iget-object v0, p0, Lorg/bouncycastle/asn1/x9/a;->c:Lorg/bouncycastle/asn1/k;
+
+    invoke-virtual {v0}, Lorg/bouncycastle/asn1/k;->q()Ljava/math/BigInteger;
+
+    move-result-object v0
+
+    return-object v0
+.end method
