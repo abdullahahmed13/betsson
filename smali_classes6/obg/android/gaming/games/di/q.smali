@@ -1,0 +1,35 @@
+.class public final Lobg/android/gaming/games/di/q;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Ldagger/internal/e;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Ldagger/internal/e;"
+    }
+.end annotation
+
+
+# direct methods
+.method public static a(Lobg/android/gaming/games/b;Lobg/android/common/model/network/HttpStatusErrorPostProcessor;)Lobg/android/gaming/games/data/remote/e;
+    .locals 1
+
+    sget-object v0, Lobg/android/gaming/games/di/a;->a:Lobg/android/gaming/games/di/a$a;
+
+    invoke-virtual {v0, p0, p1}, Lobg/android/gaming/games/di/a$a;->p(Lobg/android/gaming/games/b;Lobg/android/common/model/network/HttpStatusErrorPostProcessor;)Lobg/android/gaming/games/data/remote/e;
+
+    move-result-object p0
+
+    invoke-static {p0}, Ldagger/internal/d;->c(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Lobg/android/gaming/games/data/remote/e;
+
+    return-object p0
+.end method

@@ -1,0 +1,12 @@
+.class public interface abstract Lio/sentry/IEnvelopeReader;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# virtual methods
+.method public abstract read(Ljava/io/InputStream;)Lio/sentry/SentryEnvelope;
+    .param p1    # Ljava/io/InputStream;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+.end method

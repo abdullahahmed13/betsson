@@ -1,0 +1,29 @@
+.class public final Lcom/e/d/getApplicationIntegrationURLObject;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# instance fields
+.field public SDKError:C
+
+.field public WAFConfiguration:I
+
+.field public WAFToken:I
+
+.field public findFromException:I
+
+.field public getValue:C
+
+.field public valueOf:I
+
+.field public values:I
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method

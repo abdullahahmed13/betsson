@@ -1,0 +1,38 @@
+.class public final synthetic Lobg/android/casino/ui/gamelist/filters/b;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lkotlin/jvm/functions/Function1;
+
+
+# instance fields
+.field public final synthetic c:Lobg/android/casino/ui/gamelist/filters/j;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lobg/android/casino/ui/gamelist/filters/j;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lobg/android/casino/ui/gamelist/filters/b;->c:Lobg/android/casino/ui/gamelist/filters/j;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
+
+    iget-object v0, p0, Lobg/android/casino/ui/gamelist/filters/b;->c:Lobg/android/casino/ui/gamelist/filters/j;
+
+    check-cast p1, Lobg/android/gaming/gamelist/presentation/model/GameListUiState;
+
+    invoke-static {v0, p1}, Lobg/android/casino/ui/gamelist/filters/j;->B1(Lobg/android/casino/ui/gamelist/filters/j;Lobg/android/gaming/gamelist/presentation/model/GameListUiState;)Lkotlin/Unit;
+
+    move-result-object p1
+
+    return-object p1
+.end method

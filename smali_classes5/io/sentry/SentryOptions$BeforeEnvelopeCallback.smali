@@ -1,0 +1,23 @@
+.class public interface abstract Lio/sentry/SentryOptions$BeforeEnvelopeCallback;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lio/sentry/SentryOptions;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "BeforeEnvelopeCallback"
+.end annotation
+
+
+# virtual methods
+.method public abstract execute(Lio/sentry/SentryEnvelope;Lio/sentry/Hint;)V
+    .param p1    # Lio/sentry/SentryEnvelope;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+.end method

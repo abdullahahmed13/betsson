@@ -1,0 +1,15 @@
+.class public final Lobg/android/pam/depositlimits/viewmodel/b;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# static fields
+.field public static a:Ljava/lang/String; = "obg.android.pam.depositlimits.viewmodel.DepositLimitViewModel"
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    return-void
+.end method
